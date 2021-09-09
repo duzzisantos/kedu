@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff671a" />
+    <link rel="stylesheet" href="kedu-complaint.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Kedu!</title>
+</head>
+
+<body>
+    <h1>KEDU<span style="color: #FFE88D;"><em>!</em></span></h1>
+    <nav>
+        <div class="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="kedu.html">Home</a></li>
+            <li><a href="kedu-register.html">Register</a></li>
+            <li><a href="kedu-pricing.html">Pricing</a></li>
+            <li><a href="chatbot.html">KeduBot</a></li>
+            <li><a href="kedu-testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+
+    <h2 style="color: #43AA8B">Complaint Manager</h2>
+    <div id="demo">
+        <div id="demoA">
+            <video controls> 
+                <source src="\Users\User\OneDrive\Desktop\HTML files\myDemo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="demoB">
+            <h3>An easy-to-use complaint app. You can even track the history of
+                your support complaints.
+            </h3>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="complaint">
+        <form action="" id="complaintForm">
+            <label for="Full Name">Full Name:</label>
+            <input type="text" id="uName" placeholder="Tell me your name">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" placeholder="eg: you@youremail.com">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+            <label for="date">Today's Date:</label>
+            <input type="date" id="date" required>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10">
+            </textarea>
+            <button id="sumbit">Submit</button>
+        </form>
+    </div>
+
+    <div id="history">
+        <h4>Complaint History</h4>
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div id="innerFooter">
+            <h5>Company</h5>
+            <a href="">About</a>
+            <a href="">Board</a>
+            <a href="">Investor Relations</a>
+            <a href="">Careers</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Community</h5>
+            <a href="">Developers</a>
+            <a href="">Partners</a>
+            <a href="">CSR</a>
+            <a href="">News</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Demo</h5>
+            <a href="">KeduBot</a>
+            <a href="">Complaint Manager</a>
+            <a href="">Email Manager</a>
+            <a href="">Kedu for Government</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Resources</h5>
+            <a href="">APIs</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+            <a href="">Privacy</a>
+        </div>
+    </div>
+</body>
+<script src="kedu.js"></script>
+
+</html>

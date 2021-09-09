@@ -1,0 +1,261 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #43AA8B;
+    background-image: linear-gradient(to right, #394032, #43AA8B);
+}
+
+h5 {
+    margin-left: 25px;
+}
+
+button {
+    margin-left: 630px;
+    width: 120px;
+    font-size: 80px;
+    color: sandybrown;
+    background-color: rgb(0, 0, 44);
+    border: none;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration-line: none;
+    color: #394032;
+}
+
+button:hover a:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 1300px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #43AA8B;
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.nav-links li a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 500;
+    text-decoration-color: #F7FFDD;
+    color: #FFE88D;
+}
+
+.container {
+    height: 700px;
+    width: 1330px;
+    background-color: #43AA8B;
+    background-image: linear-gradient(to right, #43AA8B, #394032);
+    padding-top: 90px;
+    border-radius: 50px;
+}
+
+#subContainer {
+    height: 550px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 165px;
+    padding-top: 40px;
+    /* border-radius: 50px; */
+}
+
+#workFlow {
+    height: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid beige;
+}
+
+#innerFlow {
+    height: 50px;
+    width: 350px;
+    display: block;
+    background-color: white;
+    margin: 12px;
+    margin-left: 0;
+}
+
+#innerFlow #done {
+    padding: 2px;
+    width: 45px;
+    border: none;
+    background-color: #394032;
+    color: white;
+    font-size: 11px;
+    margin-left: 1px;
+}
+
+#topic {
+    height: 20px;
+    width: 350px;
+    display: block;
+    background-color: white;
+    margin: 8px;
+    margin-left: 0;
+    border: none;
+}
+
+#topic:focus {
+    outline: none;
+}
+
+#schedule {
+    height: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid beige;
+}
+
+#innerSchedule {
+    height: 50px;
+    width: 350px;
+    display: block;
+    background-color: none;
+    margin: 12px;
+    margin-left: 0;
+}
+
+#statusMsg {
+    height: 500px;
+    width: 230px;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#mailCount {
+    height: 110px;
+    width: 180px;
+    background-color: white;
+    color: #43AA8B;
+    display: block;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#number, #number1, #number2 {
+    font-size: 40px;
+    color: #394032;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border: none;
+}
+
+#mailPending {
+    height: 110px;
+    width: 180px;
+    background-color: white;
+    color: #43AA8B;
+    display: block;
+    overflow: hidden;
+    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#completionRate {
+    height: 110px;
+    width: 180px;
+    background-color: white;
+    color: #43AA8B;
+    display: block;
+    overflow: hidden;
+    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+i {
+    font-size: 140px;
+    color: white;
+    margin: 160px;
+    margin-top: 80px;
+    font-weight: 900;
+}
+
+#innerFooter {
+    height: 180px;
+    width: calc(1/5 * 1330px);
+    background-color: rgb(0, 0, 44);
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+a {
+    text-decoration-line: none;
+    color: #394032;
+    display: block;
+    margin: 10px;
+}
+
+.footer {
+    height: 180px;
+    width: 1330px;
+    background-color: #D0E3CC;
+    margin-top: 70px;
+}
+
+#innerFooter {
+    height: 180px;
+    width: calc(1/5 * 1330px);
+    background-color: #D0E3CC;
+    color: #394032;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+#innerFooter h5{
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+#innerFooter:nth-child(1) {
+    margin-left: 132px;
+}

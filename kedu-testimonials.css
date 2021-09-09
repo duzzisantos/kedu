@@ -1,0 +1,247 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+}
+
+h5 {
+    color: #F7FFDD;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+h3 {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#test1 p {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: none;
+}
+
+#test2a p, #test3b p, #test4a p, #test5b p {
+    color: #F7FFDD;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    line-height: 5vh;
+}
+h4{
+    color: #FFE88D;
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+    color: #394032;
+    display: block;
+    margin: 10px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 1300px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #43AA8B;
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.nav-links li a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 500;
+    text-decoration-color: #F7FFDD;
+    color: #FFE88D;
+}
+
+.footer {
+    height: 180px;
+    width: 1330px;
+    background-color: #D0E3CC;
+    margin-top: 80px;
+}
+
+#innerFooter h5 {
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-style: normal;
+    font-size: 13px;
+    text-align: left;
+    color: #394032;
+}
+
+#innerFooter {
+    height: 180px;
+    width: calc(1/5 * 1330px);
+    background-color: #D0E3CC;
+    color: #394032;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+#innerFooter:nth-child(1) {
+    margin-left: 132px;
+}
+
+
+#test1 {
+    height: 448px;
+    width: 1330px;
+    background-color: #394032;
+}
+
+#test2{
+    height: 448px;
+    width: 1330px;
+    background-color: #43AA8B;
+    overflow: hidden;
+}
+#test2a{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 170px;
+}
+
+#test2b{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-7086-nam_2.png?w=800&dpr=1&fit=default&crop=default&auto=null&fm=png&q=75&vib=3&con=3&usm=15&bg=transparent&ixlib=js-2.2.1&s=e5f3b006d27f751423c5cb8518d628da");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#test3{
+    height: 448px;
+    width: 1330px;
+    background-color: #319174;
+}
+
+#test3a{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 170px;
+    background-image: url("https://purepng.com/public/uploads/medium/businessman-ay6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#test3b{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+}
+#test4{
+    height: 448px;
+    width: 1330px;
+    background-color: #1e8566;
+}
+
+#test4a{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 170px;
+}
+
+#test4b{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("https://i.dlpng.com/static/png/1614544-business-man-png-business-man-png-936_907_preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#test5{
+    height: 448px;
+    width: 1330px;
+    background-color: #0d6b4f;
+}
+
+#test5a{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 170px;
+    background-image: url("https://purepng.com/public/uploads/large/businessman-onj.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#test5b{
+    height: 440px;
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+}
+#stats {
+    height: 200px;
+    width: 320px;
+    margin-top: 14px;
+    margin-left: 6.5px;
+    display: inline-block;
+}
+#stats:nth-child(1) {
+    border-bottom: 4px solid #43AA8B;
+}
+
+#stats:nth-child(2) {
+    border-bottom: 4px solid #43AA8B;
+}
+
+#stats:nth-child(3) {
+    border-bottom: 4px solid #43AA8B;
+}
+
+#stats:nth-child(4) {
+    border-bottom: 4px solid #43AA8B;
+}
+
+
+/* #stats:nth-child(5){
+    
+}
+#stats:nth-child(6){
+    
+}
+#stats:nth-child(7){
+ 
+}
+
+#stats:nth-child(8){
+
+} */

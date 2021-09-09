@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kedu</title>
+</head>
+
+<body>
+    <h1>KEDU<span style="color: #FFE88D;"><em>!</em></span></h1>
+    <nav>
+        <div class="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="kedu.html">Home</a></li>
+            <li><a href="kedu-register.html">Register</a></li>
+            <li><a href="kedu-pricing.html">Pricing</a></li>
+            <li><a href="chatbot.html">KeduBot</a></li>
+            <li><a href="kedu-testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+
+    <section id="sections">
+        <div id="intro1">
+            <h2>Delegate some of your support tasks to KeduBot</h2>
+            <p>Chatbots are injected with artificial intelligence to simulate real-life conversations. KeduBot stands
+                out because it responds naturally
+                with that level of friendliness and empathy that a human rep possesses.
+            </p>
+        </div>
+        <div id="intro2"></div>
+    </section>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">KeduBot
+            <i id="chat-icon" style="color: #FFE88D;" class="fas fa-comment-dots"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Enter Message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #394032;" class="fas fa-paper-plane"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <div id="innerFooter">
+            <h5>Company</h5>
+            <a href="">About</a>
+            <a href="">Board</a>
+            <a href="">Investor Relations</a>
+            <a href="">Careers</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Community</h5>
+            <a href="">Developers</a>
+            <a href="">Partners</a>
+            <a href="">CSR</a>
+            <a href="">News</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Demo</h5>
+            <a href="">KeduBot</a>
+            <a href="">Complaint Manager</a>
+            <a href="">Email Manager</a>
+            <a href="">Kedu for Government</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Resources</h5>
+            <a href="">APIs</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+            <a href="">Privacy</a>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="settings.json"></script>
+<script src="response.js"></script>
+<script src="chat.js"></script>
+
+</html>

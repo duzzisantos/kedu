@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kedu-analytics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Kedu</title>
+</head>
+
+<body>
+    <h1>KEDU<span style="color: #FFE88D;"><em>!</em></span></h1>
+    <nav>
+        <div class="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="kedu.html">Home</a></li>
+            <li><a href="kedu-register.html">Register</a></li>
+            <li><a href="kedu-pricing.html">Pricing</a></li>
+            <li><a href="chatbot.html">KeduBot</a></li>
+            <li><a href="kedu-testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div id="hero"></div>
+        <div id="hero2">
+            <h2>Visualize Customer Service Insights Like Never Before.</h2>
+        </div>
+    </section>
+    <section class="container">
+        <form action="">
+            <label for="Rating">Friendliness</label>
+            <input type="range" id="range1" max="5" min="1" step="1">
+            <label for="Rating">Problem-Solving Ability</label>
+            <input type="range" id="range2" max="5" min="1" step="1" onchange="rate()">
+            <label for="Rating">Quality of Conversation</label>
+            <input type="range" id="range3" max="5" min="1" step="1" onchange="rate()">
+            <label for="Rating">Clarity</label>
+            <input type="range" id="range4" max="5" min="1" step="1" onchange="rate()">
+            <label for="Rating">Time-Saving Ability</label>
+            <input type="range" id="range5" max="5" min="1" step="1" onchange="rate()">
+            <label for="Rating">Reliable Information</label>
+            <input type="range" id="range6" max="5" min="1" step="1" onchange="rate()">
+            <button id="rate" onclick="getRate(mainChart)">Submit</button>
+        </form>
+    </section>
+    <div id="chart">
+        <h5>Friendliness</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart"></canvas>
+    </div>
+    <div id="chart">
+        <h5>Problem-Solving Ability</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart2"></canvas>
+    </div>
+    <div id="chart">
+        <h5>Quality of Conversation</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart3"></canvas>
+    </div>
+    <div id="chart">
+        <h5>Clarity</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart4"></canvas>
+    </div>
+    <div id="chart">
+        <h5>Time-Saving Ability</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart5"></canvas>
+    </div>
+    <div id="chart">
+        <h5>Reliable Information</h5>
+        <button id="btn1">Line</button>
+        <button id="btn2">Doughnut</button>
+        <button id="btn2">Bar</button>
+        <select name="chartYear" id="chartYear">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="chartMonth" id="chartMonth">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="July">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <canvas id="mainChart6"></canvas>
+    </div>
+
+    <section id="success">
+        <div id="story"></div>
+        <div id="story">
+            <h3>Extract More Data From Customer Analytics.</h3>
+            <h5>Know Your Net Promoter Score Per Period.</h5>
+        </div>
+    </section>
+    <div id="average">
+        <form action="">
+            <select name="year" id="year">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            <select name="month" id="month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="July">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+            <button id="go">Go</button>
+        </form>
+        <div id="score">
+            <h2>4.5</h2>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="innerFooter">
+            <h5>Company</h5>
+            <a href="">About</a>
+            <a href="">Board</a>
+            <a href="">Investor Relations</a>
+            <a href="">Careers</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Community</h5>
+            <a href="">Developers</a>
+            <a href="">Partners</a>
+            <a href="">CSR</a>
+            <a href="">News</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Demo</h5>
+            <a href="">KeduBot</a>
+            <a href="">Complaint Manager</a>
+            <a href="">Email Manager</a>
+            <a href="">Kedu for Government</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Resources</h5>
+            <a href="">APIs</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+            <a href="">Privacy</a>
+        </div>
+    </div>
+
+    <!--INLINE JAVASCRIPT FOR CHART.JS FEATURES-->
+    <script>
+        var friendly = document.getElementById("mainChart");
+        var mainChart = new Chart(friendly, {
+            type: 'bar',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Number of customers',
+                    data: [3, 5, 7, 13, 19],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex = chart.data.labels.indexOf(document.getElementById('range1').value);
+            chart.data.datasets[0].data[rateIndex] += 1;
+            chart.update();
+        }
+
+        var solving = document.getElementById("mainChart2");
+        var mainChart2 = new Chart(solving, {
+            type: 'line',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Number of customers',
+                    data: [5, 7, 5, 13, 12],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex2 = chart.data.labels.indexOf(document.getElementById('range2').value);
+            chart.data.datasets[1].data[rateIndex] += 1;
+            chart.update();
+        }
+
+        var convo = document.getElementById("mainChart3");
+        var mainChart3 = new Chart(convo, {
+            type: 'line',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Number of customers',
+                    data: [4, 5, 9, 12, 7],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex3 = chart.data.labels.indexOf(document.getElementById('range3').value);
+            chart.data.datasets[2].data[rateIndex] += 1;
+            chart.update();
+        }
+
+        var clarity = document.getElementById("mainChart4");
+        var mainChart4 = new Chart(clarity, {
+            type: 'bar',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Rating for clarity',
+                    data: [6, 4, 6, 3, 12],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex4 = chart.data.labels.indexOf(document.getElementById('range4').value);
+            chart.data.datasets[3].data[rateIndex] += 1;
+            chart.update();
+        }
+
+        var saving = document.getElementById("mainChart5");
+        var mainChart5 = new Chart(saving, {
+            type: 'bar',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Number of customers',
+                    data: [6, 3, 2, 4, 7],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex5 = chart.data.labels.indexOf(document.getElementById('range5').value);
+            chart.data.datasets[4].data[rateIndex] += 1;
+            chart.update();
+        }
+
+        var reliable = document.getElementById("mainChart6");
+        var mainChart6 = new Chart(reliable, {
+            type: 'line',
+            data: {
+                labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
+                datasets: [{
+                    label: 'Number of customers',
+                    data: [1, 4, 3, 1, 4],
+                    backgroundColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderColor: [
+                        '#E0E2DB',
+                        '#D2D4C8',
+                        '#B8BDB5',
+                        '#889696',
+                        '#5F7470'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Customer Rating',
+                position: 'top'
+            }
+
+        });
+
+        function getRate(chart) {
+            let rateIndex6 = chart.data.labels.indexOf(document.getElementById('range6').value);
+            chart.data.datasets[5].data[rateIndex] += 1;
+            chart.update();
+        }
+    </script>
+</body>
+
+</html>

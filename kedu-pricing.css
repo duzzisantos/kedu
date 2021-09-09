@@ -1,0 +1,108 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(0, 0, 44);
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+h4{
+    color: #43AA8B;
+    font-size: 15px;
+    text-align: center;
+}
+
+sup{
+    font-size: 20px;
+}
+
+h5{
+    color: #43AA8B;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+ol li {
+    line-height: 4vh;
+    color: #43AA8B;
+}
+
+button{
+    color: #F7FFDD;
+    background-color: #43AA8B;
+    width: 100px;
+    padding: 10px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+button:hover{
+    background: #FFE88D;
+    cursor: pointer;
+    color: #394032;
+}
+hr {
+    border: 1px solid #F7FFDD;
+    border-radius: 50px;
+    width: 75%;
+}
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 1300px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #43AA8B;
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.nav-links li a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 500;
+    text-decoration-color: #F7FFDD;
+    color: #FFE88D;
+}
+
+
+
+
+h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#pricing{
+    height: 400px;
+    width: 300px;
+    background-color: #D0E3CC;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 24px;
+    overflow: hidden;
+    /* box-shadow: 2px 2px 12px 2px black; */
+}

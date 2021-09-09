@@ -1,0 +1,255 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: #43AA8B;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #394032;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#demoB h3{
+    color: #c6d1c4;
+    text-align: center;
+    font-size: 30px;
+    line-height: 9vh;
+}
+
+h4{
+    font-size: 17px;
+    color:#c6d1c4;
+    text-align: center;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 1300px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #43AA8B;
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+.nav-links li a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 500;
+    text-decoration-color: #F7FFDD;
+    color: #FFE88D;
+}
+
+
+/** FOOTER BEGINS HERE **/
+.footer {
+    height: 180px;
+    width: 1330px;
+    background-color: #D0E3CC;
+    margin-top: 100px;
+}
+
+#innerFooter h5 {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+#innerFooter {
+    height: 180px;
+    width: calc(1/5 * 1330px);
+    background-color: #D0E3CC;
+    color: #394032;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+#innerFooter:nth-child(1) {
+    margin-left: 132px;
+}
+
+a {
+    text-decoration-line: none;
+    color: #394032;
+    display: block;
+    margin: 10px;
+} 
+ 
+/** FOOTER ENDS HERE **/
+
+
+#demo{
+    height: 300px;
+    width: 1330px;
+}
+
+#demoA{
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: 260px;
+    border-top: 12px solid #43AA8B;
+    border-right: 16px solid #c6d1c4;
+    border-left: 1px solid #c6d1c4;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 1px solid #43AA8B;
+}
+
+#demoB{
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+video{
+    height: 300px;
+    width: 400px;
+}
+
+hr{
+    border: 3px solid #c6d1c4;
+    width: 50%;
+    border-radius: 50px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+#complaint {
+    height: 700px;
+    background-color: #43AA8B;
+    background-image: linear-gradient(to right, #43AA8b, #43AA6B);
+    width: 600px;
+    margin-left: 100px;
+    padding-top: 15px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+#history {
+    height: 700px;
+    width: 430px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 150px;
+    border: 1px solid beige;
+}
+
+#history h4 {
+    text-align: center;
+}
+
+#history h6 {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    color: #394032;
+}
+
+#historyList {
+    height: 70px;
+    width: 430px;
+    background-color: #f1f1f1;
+    display: none;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 0;
+    padding-left: 4px;
+    font-size: 12px;
+    color: #394032;
+}
+
+#historyList:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+label {
+    display: block;
+    margin-left: 95px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#uName, #email, #subject, #date {
+    width: 400px;
+    margin-left: 95px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    box-shadow: 1px 0px 0px 1px whitesmoke;
+}
+
+#message {
+    width: 400px;
+    margin-left: 95px;
+    height: 250px;
+    border: none;
+    padding-top: 10px;
+}
+
+#subject {
+    color: #394032;
+    font-size: 13px;
+}
+
+button {
+    padding: 10px;
+    width: 120px;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-left: 95px;
+    border: none;
+    background-color: #394032;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+button:hover {
+    color: #FFE88D;
+    cursor: pointer;
+}

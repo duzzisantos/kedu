@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kedu-email.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Kedu</title>
+</head>
+
+<body>
+    <h1>KEDU<span style="color: #FFE88D;"><em>!</em></span></h1>
+    <nav>
+        <div class="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="kedu.html">Home</a></li>
+            <li><a href="kedu-register.html">Register</a></li>
+            <li><a href="kedu-pricing.html">Pricing</a></li>
+            <li><a href="chatbot.html">KeduBot</a></li>
+            <li><a href="kedu-testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+
+    <h2>Workflow Manager</h2>
+    <div class="container">
+        <div id="subContainer">
+            <div id="workFlow">
+                <h3>Work Flow</h3>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <form action="">
+                        <input type="text" id="topic">
+                        <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()">
+                    </form>
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <form action="">
+                        <input type="text" id="topic">
+                        <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()">
+                    </form>
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <input type="text" id="topic">
+                    <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()"> 
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <input type="text" id="topic">
+                    <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()"> 
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <input type="text" id="topic">
+                    <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()">
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <input type="text" id="topic">
+                    <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()">
+                </div>
+                <div id="innerFlow" draggable="true" ondragstart="drag(event)">
+                    <input type="text" id="topic">
+                    <input type="button" id="done" value="unsent" onclick="statusChange()" onclick="increase()">
+                </div>
+
+            </div>
+            <div id="schedule">
+                <h3>Schedule Task</h3>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="innerSchedule" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div id="statusMsg">
+                <h3>Status</h3>
+                <div id="mailCount">
+                    <h4>Work Scheduled</h4>
+                    <input type="text" id="number" value="0"/>
+                </div>
+                <div id="completionRate">
+                    <h4>Remaining Workflow</h4>
+                    <input type="text" id="number2" value="0"/>
+                </div>
+                <div id="mailPending">
+                    <h4>Rate of Remaining</h4>
+                    <input type="text" id="number1" value="0%"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div id="innerFooter">
+            <h5>Company</h5>
+            <a href="">About</a>
+            <a href="">Board</a>
+            <a href="">Investor Relations</a>
+            <a href="">Careers</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Community</h5>
+            <a href="">Developers</a>
+            <a href="">Partners</a>
+            <a href="">CSR</a>
+            <a href="">News</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Demo</h5>
+            <a href="">KeduBot</a>
+            <a href="">Complaint Manager</a>
+            <a href="">Email Manager</a>
+            <a href="">Kedu for Government</a>
+        </div>
+        <div id="innerFooter">
+            <h5>Resources</h5>
+            <a href="">APIs</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+            <a href="">Privacy</a>
+        </div>
+    </div>
+</body>
+<script src="kedu.js"></script>
+
+</html>
